@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="405.0" prefWidth="326.0" style="-fx-background-color: #2b8065; -fx-background-radius: 15px; -fx-border-color: #024f37; -fx-border-radius: 0; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gameof15.ResultsController">
+   <children>
+      <AnchorPane layoutX="26.0" layoutY="30.0" prefHeight="63.0" prefWidth="275.0" style="-fx-background-color: #2b8065; -fx-border-radius: 10px; -fx-border-width: 5; -fx-background-radius: 13px; -fx-border-color: #024f37; -fx-border-style: solid;" AnchorPane.topAnchor="25.0">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="12.0" prefHeight="41.0" prefWidth="124.0" text="Рейтинг" textAlignment="CENTER" textFill="#a3c7bc" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Calibri Bold" size="33.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="ImageResetRating" fitHeight="39.0" fitWidth="39.0" layoutX="176.0" layoutY="15.0" onMouseClicked="#resetRating" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../reset.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="ImageExitRating" fitHeight="35.0" fitWidth="39.0" layoutX="225.0" layoutY="16.0" onMouseClicked="#exitRating" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../return.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <GridPane fx:id="GridLabels" alignment="CENTER" layoutX="26.0" layoutY="115.0" prefHeight="261.0" prefWidth="275.0" style="-fx-background-color: #2b8065; -fx-border-color: #024f37; -fx-border-style: solid; -fx-border-width: 5; -fx-border-radius: 10px; -fx-background-radius: 13px;" AnchorPane.bottomAnchor="20.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="79.0" minWidth="10.0" prefWidth="36.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="103.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="104.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="83.0" prefWidth="51.0" style="-fx-border-color: #024f37; -fx-border-width: 1; -fx-border-style: solid;" text="1" textAlignment="CENTER" textFill="#a3c7bc" textOverrun="WORD_ELLIPSIS" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="83.0" prefWidth="51.0" style="-fx-border-color: #024f37; -fx-border-width: 1; -fx-border-style: solid;" text="2" textAlignment="CENTER" textFill="#a3c7bc" textOverrun="WORD_ELLIPSIS" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="154.0" prefWidth="44.0" style="-fx-border-color: #024f37; -fx-border-width: 1; -fx-border-style: solid;" text="3" textAlignment="CENTER" textFill="#a3c7bc" textOverrun="WORD_ELLIPSIS" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="LabelName1" alignment="CENTER" prefHeight="83.0" prefWidth="110.0" style="-fx-border-color: #024f37; -fx-border-width: 1; -fx-border-style: solid;" text="-" textAlignment="CENTER" textFill="#a3c7bc" textOverrun="WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="LabelMoves1" alignment="CENTER" prefHeight="63.0" prefWidth="122.0" style="-fx-border-color: #024f37; -fx-border-width: 1; -fx-border-style: solid;" text="-" textAlignment="CENTER" textFill="#a3c7bc" textOverrun="WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="LabelName2" alignment="CENTER" prefHeight="83.0" prefWidth="110.0" style="-fx-border-color: #024f37; -fx-border-width: 1; -fx-border-style: solid;" text="-" textAlignment="CENTER" textFill="#a3c7bc" textOverrun="WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="LabelMoves2" alignment="CENTER" prefHeight="63.0" prefWidth="158.0" style="-fx-border-color: #024f37; -fx-border-width: 1; -fx-border-style: solid;" text="-" textAlignment="CENTER" textFill="#a3c7bc" textOverrun="WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="LabelName3" alignment="CENTER" prefHeight="155.0" prefWidth="110.0" style="-fx-border-color: #024f37; -fx-border-width: 1; -fx-border-style: solid;" text="-" textAlignment="CENTER" textFill="#a3c7bc" textOverrun="WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="LabelMoves3" alignment="CENTER" prefHeight="144.0" prefWidth="111.0" style="-fx-border-color: #024f37; -fx-border-width: 1; -fx-border-style: solid;" text="-" textAlignment="CENTER" textFill="#a3c7bc" textOverrun="WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="83.0" prefWidth="110.0" style="-fx-border-color: #024f37; -fx-border-width: 1; -fx-border-style: solid;" text="Ім'я" textAlignment="CENTER" textFill="#a3c7bc" textOverrun="WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="103.0" prefWidth="111.0" style="-fx-border-color: #024f37; -fx-border-width: 1; -fx-border-style: solid;" text="Переміщення" textAlignment="CENTER" textFill="#a3c7bc" textOverrun="WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="63.0" prefWidth="121.0" style="-fx-border-color: #024f37; -fx-border-width: 1; -fx-border-style: solid;" textAlignment="CENTER" textFill="#a3c7bc" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

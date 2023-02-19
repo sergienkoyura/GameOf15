@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPaneButtons" prefHeight="330.0" prefWidth="299.0" style="-fx-background-color: #2b8065; -fx-background-radius: 15px; -fx-border-color: #024f37; -fx-border-radius: 0; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gameof15.ChooseGameController">
+   <children>
+      <Button fx:id="ButtonContinueGame" alignment="CENTER" layoutX="30.0" layoutY="130.0" mnemonicParsing="false" onAction="#savedGame" prefHeight="70.0" prefWidth="240.0" style="-fx-background-color: #024f37; -fx-background-radius: 10;" text="Збережена" textFill="#a3c7bc">
+         <font>
+            <Font name="Calibri Bold" size="33.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="ButtonNewGame" alignment="CENTER" layoutX="30.0" layoutY="232.0" mnemonicParsing="false" onAction="#newGame" prefHeight="70.0" prefWidth="240.0" style="-fx-background-color: #024f37; -fx-background-radius: 10;" text="Нова" textFill="#a3c7bc" AnchorPane.bottomAnchor="25.0">
+         <font>
+            <Font name="Calibri Bold" size="33.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane layoutX="30.0" layoutY="36.0" prefHeight="70.0" prefWidth="240.0" style="-fx-background-color: #2b8065; -fx-border-radius: 10px; -fx-border-width: 5; -fx-background-radius: 13px; -fx-border-color: #024f37; -fx-border-style: solid;" AnchorPane.topAnchor="25.0">
+         <children>
+            <Label layoutX="52.0" layoutY="16.0" text="Вибір гри" textFill="#a3c7bc">
+               <font>
+                  <Font name="Calibri Bold" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

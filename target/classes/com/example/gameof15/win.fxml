@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="WinPage" prefHeight="580.0" prefWidth="450.0" style="-fx-background-color: #a3c7bc;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gameof15.WinController">
+    <children>
+      <AnchorPane layoutX="25.0" layoutY="20.0" prefHeight="58.0" prefWidth="400.0" style="-fx-background-color: #2b8065; -fx-border-radius: 10px; -fx-border-width: 5; -fx-background-radius: 13px; -fx-border-color: #024f37; -fx-border-style: solid;" AnchorPane.topAnchor="25.0">
+         <children>
+            <Label fx:id="LabelGame" layoutX="145.0" layoutY="11.0" text="Гра у 15" textFill="#a3c7bc">
+               <font>
+                  <Font name="Calibri Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="AnchorPaneButtons" layoutX="25.0" layoutY="90.0" prefHeight="455.0" prefWidth="400.0" style="-fx-background-color: #2b8065; -fx-background-radius: 15px; -fx-border-color: #024f37; -fx-border-radius: 10; -fx-border-width: 5;" AnchorPane.bottomAnchor="25.0">
+         <children>
+              <Button fx:id="ButtonExitWin" alignment="CENTER" layoutX="55.0" layoutY="344.0" mnemonicParsing="false" onAction="#exitGame" prefHeight="75.0" prefWidth="290.0" style="-fx-background-color: #024f37; -fx-background-radius: 10;" text="Вийти" textFill="#a3c7bc" AnchorPane.bottomAnchor="14.0">
+                  <font>
+                      <Font name="Calibri Bold" size="30.0" />
+                  </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+              </Button>
+              <Button fx:id="ButtonResetWin" alignment="CENTER" layoutX="55.0" layoutY="276.0" mnemonicParsing="false" onAction="#resetGameWin" prefHeight="75.0" prefWidth="290.0" style="-fx-background-color: #024f37; -fx-background-radius: 10;" text="Рестарт" textFill="#a3c7bc">
+                  <font>
+                      <Font name="Calibri Bold" size="30.0" />
+                  </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+              </Button>
+              <AnchorPane layoutX="55.0" layoutY="14.0" prefHeight="75.0" prefWidth="290.0" style="-fx-background-color: #2b8065; -fx-border-radius: 10px; -fx-border-width: 5; -fx-background-radius: 13px; -fx-border-color: #024f37; -fx-border-style: solid;" AnchorPane.topAnchor="14.0">
+                  <children>
+                      <Label layoutX="48.0" layoutY="20.0" text="Ви перемогли!" textFill="#a3c7bc">
+                          <font>
+                              <Font name="Calibri Bold" size="30.0" />
+                          </font>
+                      </Label>
+                  </children>
+              </AnchorPane>
+            <AnchorPane layoutX="55.0" layoutY="105.0" prefHeight="75.0" prefWidth="290.0" style="-fx-background-color: #2b8065; -fx-border-radius: 10px; -fx-border-width: 5; -fx-background-radius: 13px; -fx-border-color: #024f37; -fx-border-style: solid;">
+               <children>
+                  <Label fx:id="LabelResult" alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="20.0" prefHeight="35.0" prefWidth="269.0" style="-fx-text-alignment: center;" text="Переміщення: 1000" textFill="#a3c7bc">
+                     <font>
+                        <Font name="Calibri Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="ButtonSaveResult" alignment="CENTER" layoutX="55.0" layoutY="190.0" mnemonicParsing="false" onAction="#saveResult" prefHeight="75.0" prefWidth="290.0" style="-fx-background-color: #024f37; -fx-background-radius: 10;" text="Зберегти результат" textFill="#a3c7bc">
+               <font>
+                  <Font name="Calibri Bold" size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
