@@ -1,4 +1,4 @@
-# Desktop application "Game of 15"
+# Desktop game"Game of 15"
 It is a multi-window desktop game with UI where you need to place the tiles in numerical order.
 ## Functionality
 * auto-save on exit
